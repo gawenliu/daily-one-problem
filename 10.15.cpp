@@ -1,19 +1,18 @@
 /*
-ÄÑ¶ÈÒ»
-¶þ½øÖÆºÍÊ®½øÖÆ×ª»»£¬ÊäÈëÎª£ºÔ­½øÖÆ¡¢×ª»»ºóµÄ½øÖÆÒÔ¼°Êý×Ö£»Êä³öÎª£º×ª»»ºóµÄ½øÖÆ¡£
-ÊäÈëÑùÀý£º2  10   11
-Êä³öÑùÀý£º3
-ÄÑ¶È¶þ
-ÈÎÒâ½øÖÆ×ª»»£¬ÊäÈëÎª£ºÔ­½øÖÆ¡¢×ª»»ºóµÄ½øÖÆÒÔ¼°Êý×Ö£»Êä³öÎª£º×ª»»ºóµÄ½øÖÆ¡£
-ÊäÈëÑùÀý£º8  16   17
-Êä³öÑùÀý£ºF
-ÄÑ¶ÈÈý
-³¬´óÕûÊý¼äµÄ½øÖÆ×ª»»£¬ÊäÈëÎª£ºÔ­½øÖÆ¡¢×ª»»ºóµÄ½øÖÆÒÔ¼°Êý×Ö£»Êä³öÎª£º×ª»»ºóµÄ½øÖÆ¡£
-ÊäÈëÑùÀý£º8  2   777777777777
-Êä³öÑùÀý£º111111111111111111111111111111111111
+éš¾åº¦ä¸€
+äºŒè¿›åˆ¶å’Œåè¿›åˆ¶è½¬æ¢ï¼Œè¾“å…¥ä¸ºï¼šåŽŸè¿›åˆ¶ã€è½¬æ¢åŽçš„è¿›åˆ¶ä»¥åŠæ•°å­—ï¼›è¾“å‡ºä¸ºï¼šè½¬æ¢åŽçš„è¿›åˆ¶ã€‚
+è¾“å…¥æ ·ä¾‹ï¼š2  10   11
+è¾“å‡ºæ ·ä¾‹ï¼š3
+éš¾åº¦äºŒ
+ä»»æ„è¿›åˆ¶è½¬æ¢ï¼Œè¾“å…¥ä¸ºï¼šåŽŸè¿›åˆ¶ã€è½¬æ¢åŽçš„è¿›åˆ¶ä»¥åŠæ•°å­—ï¼›è¾“å‡ºä¸ºï¼šè½¬æ¢åŽçš„è¿›åˆ¶ã€‚
+è¾“å…¥æ ·ä¾‹ï¼š8  16   17
+è¾“å‡ºæ ·ä¾‹ï¼šF
+éš¾åº¦ä¸‰
+è¶…å¤§æ•´æ•°é—´çš„è¿›åˆ¶è½¬æ¢ï¼Œè¾“å…¥ä¸ºï¼šåŽŸè¿›åˆ¶ã€è½¬æ¢åŽçš„è¿›åˆ¶ä»¥åŠæ•°å­—ï¼›è¾“å‡ºä¸ºï¼šè½¬æ¢åŽçš„è¿›åˆ¶ã€‚
+è¾“å…¥æ ·ä¾‹ï¼š8  2   777777777777
+è¾“å‡ºæ ·ä¾‹ï¼š111111111111111111111111111111111111
 */
 
-//1.0
 #include<stdio.h>
 #include<string.h>
 int main()
@@ -22,7 +21,8 @@ int main()
 	int shuchuwei[100];
 	char shuru[100];
 	char shuchu[100];
-	int yuan,zhuan,zhi=0,length=0,x=0,y=0,z=0,h=1;
+	int yuan,zhuan,length=0;
+    long long int zhi=0,x=0,y=0,z=0,h=1; 
 	scanf("%d",&yuan);
 	scanf("%d",&zhuan);
 	scanf("%s",shuru);
@@ -46,7 +46,6 @@ int main()
 		zhi+=shuruwei[length-x-1]*h;
 		h*=yuan;
 	}
-	printf("%d\n",zhi);
 	x=zhi;y=0;z=zhuan;
 	while(x!=0)
 	{
@@ -68,4 +67,4 @@ int main()
 		printf("%c",shuchu[x]);
 	}
 	return 0;
-}
+} 
