@@ -32,3 +32,17 @@ int main()
 	 } 
 	return 0;
 }
+//难度二
+#include<stdio.h>
+int main(){
+	int a,b,sum=1,result=0;
+	int i=0;
+	printf("底数和指数:");
+	scanf("%d,%d",&a,&b);
+	for(i=b;i>0;i--){
+		sum*=a;
+	}
+	result=sum%100;
+	printf("%d\n",result);
+	return 0;
+}
