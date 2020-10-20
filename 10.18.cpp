@@ -7,14 +7,12 @@
 输出样例：
 27
 4
-
 难度二
 编程实现幂运算，用户输入一组a和b；输出a的b次方的后两位(注意：a的b次方的结果为超大整数)
 输入样例:
 16 520
 输出样例：
 76
-
 难度三
 使用 快速幂 的方法实现难度二*/
 //难度一
@@ -46,3 +44,27 @@ int main(){
 	printf("%d\n",result);
 	return 0;
 }
+//难度三
+#include<stdio.h>
+long long fastPower(long long base, long long power) 
+{
+    long long result = 1;
+    while (power > 0) {
+        if (power % 2 == 1) {
+            result = result * base % 100;
+        }
+        power = power / 2;
+        base = (base * base) % 100;
+    }
+    return result;
+}
+int main()
+{
+	long long int fastpower,base,power;
+	scanf("%ld",&base);
+	scanf("%ld",&power);
+	fastpower=fastPower(base,power);
+	printf("%lld",fastpower);
+	return 0;
+}
+//快速幂算法链接：https://blog.csdn.net/qq_19782019/article/details/85621386 
